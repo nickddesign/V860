@@ -9,6 +9,6 @@ Cygwin
 
 cd /boot
 
-./unpack-bootimg boot.img
+./unpack-bootimg.pl boot.img
 
 
