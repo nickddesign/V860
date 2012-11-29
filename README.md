@@ -25,3 +25,10 @@ ramdisk written to boot.img-ramdisk.cpio.gz
 
 extracted ramdisk contents to directory boot.img-ramdisk/
 
+$ gunzip -c ../boot.img-ramdisk.cpio | cpio -i
+
+gzip: ../boot.img-ramdisk.cpio.gz: decompression OK, trailing garbage ignored
+511 blocks
+
+
+
