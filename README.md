@@ -30,5 +30,9 @@ $ gunzip -c ../boot.img-ramdisk.cpio | cpio -i
 gzip: ../boot.img-ramdisk.cpio.gz: decompression OK, trailing garbage ignored
 511 blocks
 
+$ find . | cpio -o -H newc | gzip > ../newramdisk.cpio.gz
+511 blocks
+
+
 
 
