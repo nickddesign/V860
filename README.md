@@ -54,4 +54,24 @@ gzip: ../recovery.img-ramdisk.cpio.gz: decompression OK, trailing garbage ignore
 extracted ramdisk contents to directory recovery.img-ramdisk/
 
 
+               Recovery.fstab
+               
+# mount         fstype          device                  [device2]   [fstype2]   [fsoptions]         [fsoptions2]
+/data           ext4            /dev/block/stl19        NULL        rfs         NULL                check=no
+/sdcard         vfat            /dev/block/mmcblk0p1 
+/system         ext4            /dev/block/stl15        NULL        rfs         NULL                check=no
+/cache          ext4            /dev/block/stl16        NULL        rfs         NULL                check=no     
+/custpack       ext4            /dev/block/stl18
+/misc           mtd             /dev/block/stl13
+/boot           mtd             /dev/block/stl11
+/recovery       mtd             /dev/block/stl12
+/modem          mtd             /dev/block/stl0
+/bootloader     mtd             /dev/block/stl5
+/sysparm_ind    mtd             /dev/block/stl1
+/comms          mtd             /dev/block/stl2
+/dsp_pram       mtd             /dev/block/stl3
+/dsp_dram       mtd             /dev/block/stl4
+/FOTAFLAG       mtd             /dev/block/stl10
+/bootloader2    mtd             /dev/block/stl9
+
 
